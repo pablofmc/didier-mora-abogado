@@ -113,7 +113,7 @@ export default function AbogadoTransitoPage() {
   };
 
   return (
-    <main className="space-y-16 pb-24">
+    <main className="space-y-12 pb-16 sm:space-y-16 sm:pb-24">
       {/* JSON-LD for SEO */}
       <script
         type="application/ld+json"
@@ -125,20 +125,22 @@ export default function AbogadoTransitoPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <section className="bg-white/60 py-16">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
           <div className="space-y-6">
             <p className="text-xs uppercase tracking-[0.3em] text-muted">San José, Costa Rica</p>
-            <h1 className="font-serif text-4xl text-navy sm:text-5xl">
+            <h1 className="font-serif text-3xl text-navy sm:text-4xl lg:text-5xl">
               Abogado de Tránsito en Costa Rica
             </h1>
             <p className="text-base text-muted">
               Atención legal clara en derecho de tránsito, con respuesta rápida y seguimiento
               transparente.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button href="/contacto">Agendar consulta</Button>
-              <Button href="https://wa.me/50687116249" variant="secondary">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button href="/contacto" className="w-full sm:w-auto">
+                Agendar consulta
+              </Button>
+              <Button href="https://wa.me/50687116249" variant="secondary" className="w-full sm:w-auto">
                 WhatsApp
               </Button>
             </div>
@@ -146,7 +148,7 @@ export default function AbogadoTransitoPage() {
           <Card className="space-y-4">
             <p className="text-xs uppercase tracking-[0.3em] text-muted">Experiencia</p>
             <h2 className="font-serif text-2xl text-navy">Derecho de tránsito con criterio</h2>
-            <ul className="list-disc space-y-3 pl-5 text-sm text-muted marker:text-gold">
+            <ul className="list-disc space-y-3 pl-5 text-base text-muted marker:text-gold">
               <li>19 años de experiencia en derecho de tránsito.</li>
               <li>Casos exitosos con resolución favorable.</li>
               <li>Accidentes viales, apelaciones y audiencias.</li>
@@ -163,7 +165,7 @@ export default function AbogadoTransitoPage() {
             title="Soluciones en derecho de tránsito"
             subtitle="Representación y asesoría para proteger tus derechos." 
           />
-          <p className="max-w-3xl text-sm text-muted">
+          <p className="max-w-3xl text-base text-muted">
             Asesoría en San José, Costa Rica, para conductores y empresas con atención directa y
             seguimiento claro en cada etapa.
           </p>
@@ -171,14 +173,14 @@ export default function AbogadoTransitoPage() {
             {services.map((service) => (
               <Card key={service.title} className="space-y-3">
                 <h2 className="font-serif text-xl text-navy">{service.title}</h2>
-                <p className="text-sm text-muted">{service.detail}</p>
+                <p className="text-base text-muted">{service.detail}</p>
               </Card>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-white/60 py-16">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="space-y-8">
           <SectionHeader
             eyebrow="Preguntas frecuentes"
@@ -190,7 +192,7 @@ export default function AbogadoTransitoPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Qué debo hacer después de un accidente de tránsito?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Después de un accidente de tránsito es importante mantener la calma, contactar a
                 las autoridades y no aceptar responsabilidades sin asesoría legal. Un abogado puede
                 orientarte desde el inicio del proceso, explicar los pasos ante el juzgado de
@@ -201,7 +203,7 @@ export default function AbogadoTransitoPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Puedo apelar una multa de tránsito?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Sí. Las multas de tránsito pueden ser apeladas dentro de los plazos establecidos
                 por ley. Un abogado de tránsito puede evaluar si existen fundamentos legales para
                 presentar la apelación y preparar el escrito con respaldo jurídico, evitando
@@ -212,7 +214,7 @@ export default function AbogadoTransitoPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Qué pasa si hay personas lesionadas en un accidente?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Cuando existen personas lesionadas, el proceso se vuelve más complejo y puede tener
                 implicaciones penales. Contar con asesoría legal desde el inicio es fundamental
                 para proteger tus derechos, coordinar la evidencia y responder adecuadamente ante
@@ -223,7 +225,7 @@ export default function AbogadoTransitoPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Es obligatorio asistir a las audiencias de tránsito?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Sí. No asistir a una audiencia puede generar consecuencias negativas en el proceso.
                 Un abogado puede representarte y orientarte sobre cada etapa, así como preparar la
                 documentación necesaria para que la audiencia sea ordenada y clara.
@@ -231,7 +233,7 @@ export default function AbogadoTransitoPage() {
             </Card>
             <Card>
               <h3 className="font-serif text-lg text-navy">¿Cuánto dura un proceso de tránsito?</h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 La duración depende de la complejidad del caso, la existencia de lesiones y las
                 instancias involucradas. Un adecuado seguimiento legal ayuda a evitar retrasos
                 innecesarios y a mantener el expediente en movimiento, con expectativas realistas

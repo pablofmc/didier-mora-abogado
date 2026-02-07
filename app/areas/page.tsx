@@ -49,8 +49,8 @@ const areas = [
 
 export default function AreasPage() {
   return (
-    <main className="space-y-16 pb-24">
-      <section className="bg-white/60 py-16">
+    <main className="space-y-12 pb-16 sm:space-y-16 sm:pb-24">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="space-y-10">
           <SectionHeader
             eyebrow="Servicios"
@@ -61,7 +61,7 @@ export default function AreasPage() {
             {areas.map((area) => (
               <Card key={area.title} className="flex flex-col gap-3">
                 <h3 className="font-serif text-xl text-navy">{area.title}</h3>
-                <p className="text-sm text-muted">{area.description}</p>
+                <p className="text-base text-muted">{area.description}</p>
               </Card>
             ))}
           </div>
@@ -75,12 +75,12 @@ export default function AreasPage() {
             <h2 className="font-serif text-3xl text-navy sm:text-4xl">
               Una estrategia legal enfocada en resultados
             </h2>
-            <p className="text-sm text-muted">
+            <p className="text-base text-muted">
               Cada caso se analiza con detalle, priorizando una ruta clara y opciones viables.
             </p>
           </div>
           <div className="rounded-3xl border border-navy/10 bg-cream/70 p-6">
-            <ul className="space-y-3 text-sm text-muted">
+            <ul className="space-y-3 text-base text-muted">
               <li>Diagnóstico legal claro y preciso.</li>
               <li>Plan de acción con tiempos y prioridades.</li>
               <li>Comunicación constante y transparente.</li>

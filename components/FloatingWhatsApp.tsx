@@ -5,11 +5,11 @@ export default function FloatingWhatsApp() {
     <Link
       href="https://wa.me/50687116249"
       aria-label="Contactar por WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gold text-navy shadow-soft transition-transform duration-200 hover:-translate-y-1 focus-ring"
+      className="fixed bottom-4 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-gold text-navy shadow-soft transition-transform duration-200 hover:-translate-y-1 focus-ring sm:bottom-6 sm:right-6 sm:h-14 sm:w-14"
     >
       <svg
         viewBox="0 0 24 24"
-        className="h-7 w-7"
+        className="h-6 w-6 sm:h-7 sm:w-7"
         fill="currentColor"
         aria-hidden="true"
       >

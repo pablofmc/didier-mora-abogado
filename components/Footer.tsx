@@ -11,7 +11,7 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-navy/10 bg-cream/80">
-      <Container className="grid gap-8 py-12 md:grid-cols-[2fr,1fr,1fr]">
+      <Container className="grid gap-8 py-10 md:grid-cols-[2fr,1fr,1fr] sm:py-12">
         <div className="space-y-3">
           <p className="font-serif text-lg text-navy">Didier Mora Calvo</p>
           <p className="text-sm text-muted">
