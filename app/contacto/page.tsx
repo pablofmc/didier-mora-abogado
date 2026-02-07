@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 export default function ContactoPage() {
   return (
-    <main className="space-y-16 pb-24">
-      <section className="bg-white/60 py-16">
+    <main className="space-y-12 pb-16 sm:space-y-16 sm:pb-24">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
           <div className="space-y-6">
             <SectionHeader
@@ -43,7 +43,7 @@ export default function ContactoPage() {
                     name="nombre"
                     type="text"
                     required
-                    className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-sm text-text focus-ring"
+                    className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-base text-text focus-ring"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -56,7 +56,7 @@ export default function ContactoPage() {
                     name="telefono"
                     type="tel"
                     required
-                    className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-sm text-text focus-ring"
+                    className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-base text-text focus-ring"
                     placeholder="+506 87116249"
                   />
                 </div>
@@ -70,7 +70,7 @@ export default function ContactoPage() {
                   name="correo"
                   type="email"
                   required
-                  className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-sm text-text focus-ring"
+                  className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-base text-text focus-ring"
                   placeholder="correo@ejemplo.com"
                 />
               </div>
@@ -83,11 +83,13 @@ export default function ContactoPage() {
                   name="mensaje"
                   rows={5}
                   required
-                  className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-sm text-text focus-ring"
+                  className="w-full rounded-2xl border border-navy/10 bg-white px-4 py-3 text-base text-text focus-ring"
                   placeholder="Contame brevemente tu caso"
                 />
               </div>
-              <Button type="submit">Agendar consulta</Button>
+              <Button type="submit" className="w-full sm:w-auto">
+                Agendar consulta
+              </Button>
             </form>
           </div>
 
@@ -95,13 +97,13 @@ export default function ContactoPage() {
             <Card className="space-y-4">
               <p className="text-xs uppercase tracking-[0.3em] text-muted">Atención</p>
               <h3 className="font-serif text-2xl text-navy">San José, Costa Rica</h3>
-              <p className="text-sm text-muted">Horario: lunes a viernes · 8:00 a.m. - 6:00 p.m.</p>
-              <p className="text-sm text-muted">Atención virtual y presencial con cita previa.</p>
+              <p className="text-base text-muted">Horario: lunes a viernes · 8:00 a.m. - 6:00 p.m.</p>
+              <p className="text-base text-muted">Atención virtual y presencial con cita previa.</p>
             </Card>
             <Card className="space-y-4 border-gold/40">
               <p className="text-xs uppercase tracking-[0.3em] text-muted">Contacto directo</p>
-              <p className="text-sm text-muted">+506 87116249</p>
-              <p className="text-sm text-muted">dimocalvo48@yahoo.com</p>
+              <p className="text-base text-muted">+506 87116249</p>
+              <p className="text-base text-muted">dimocalvo48@yahoo.com</p>
               <Button href="https://wa.me/50687116249" variant="secondary">
                 WhatsApp
               </Button>

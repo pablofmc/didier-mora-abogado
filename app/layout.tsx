@@ -4,6 +4,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import Analytics from "@/components/Analytics";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <FloatingWhatsApp />
+        <Analytics />
       </body>
     </html>
   );

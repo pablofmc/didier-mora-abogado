@@ -20,11 +20,11 @@ export default function SectionHeader({
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="font-serif text-3xl sm:text-4xl text-navy">
+      <h2 className="font-serif text-2xl leading-tight text-navy sm:text-3xl lg:text-4xl">
         {title}
       </h2>
       {subtitle ? (
-        <p className="max-w-2xl text-base sm:text-lg text-muted">
+        <p className="max-w-2xl text-base text-muted sm:text-lg">
           {subtitle}
         </p>
       ) : null}

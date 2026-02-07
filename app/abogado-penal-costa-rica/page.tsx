@@ -113,7 +113,7 @@ export default function AbogadoPenalPage() {
   };
 
   return (
-    <main className="space-y-16 pb-24">
+    <main className="space-y-12 pb-16 sm:space-y-16 sm:pb-24">
       {/* JSON-LD for SEO */}
       <script
         type="application/ld+json"
@@ -125,20 +125,22 @@ export default function AbogadoPenalPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <section className="bg-white/60 py-16">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="grid gap-10 lg:grid-cols-[1.1fr,0.9fr]">
           <div className="space-y-6">
             <p className="text-xs uppercase tracking-[0.3em] text-muted">San José, Costa Rica</p>
-            <h1 className="font-serif text-4xl text-navy sm:text-5xl">
+            <h1 className="font-serif text-3xl text-navy sm:text-4xl lg:text-5xl">
               Abogado Penal en Costa Rica
             </h1>
             <p className="text-base text-muted">
               Defensa penal clara, estratégica y confidencial. Acompaño tu caso con seriedad,
               comunicación directa y enfoque en resultados.
             </p>
-            <div className="flex flex-wrap gap-3">
-              <Button href="/contacto">Agendar consulta</Button>
-              <Button href="https://wa.me/50687116249" variant="secondary">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button href="/contacto" className="w-full sm:w-auto">
+                Agendar consulta
+              </Button>
+              <Button href="https://wa.me/50687116249" variant="secondary" className="w-full sm:w-auto">
                 WhatsApp
               </Button>
             </div>
@@ -146,7 +148,7 @@ export default function AbogadoPenalPage() {
           <Card className="space-y-4">
             <p className="text-xs uppercase tracking-[0.3em] text-muted">Autoridad judicial</p>
             <h2 className="font-serif text-2xl text-navy">Trayectoria comprobada</h2>
-            <ul className="list-disc space-y-3 pl-5 text-sm text-muted marker:text-gold">
+            <ul className="list-disc space-y-3 pl-5 text-base text-muted marker:text-gold">
               <li>Ex Juez de la República.</li>
               <li>32 años en la Corte.</li>
               <li>Formación en Sala IV.</li>
@@ -163,7 +165,7 @@ export default function AbogadoPenalPage() {
             title="Cómo te puedo ayudar en derecho penal"
             subtitle="Estrategia legal clara para cada etapa del proceso."
           />
-          <p className="max-w-3xl text-sm text-muted">
+          <p className="max-w-3xl text-base text-muted">
             Atención penal en San José, Costa Rica, con enfoque preventivo y defensa técnica cuando
             el caso lo requiere.
           </p>
@@ -171,14 +173,14 @@ export default function AbogadoPenalPage() {
             {services.map((service) => (
               <Card key={service.title} className="space-y-3">
                 <h2 className="font-serif text-xl text-navy">{service.title}</h2>
-                <p className="text-sm text-muted">{service.detail}</p>
+                <p className="text-base text-muted">{service.detail}</p>
               </Card>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-white/60 py-16">
+      <section className="bg-white/60 py-12 sm:py-16">
         <Container className="space-y-8">
           <SectionHeader
             eyebrow="Preguntas frecuentes"
@@ -190,7 +192,7 @@ export default function AbogadoPenalPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Cuándo debo contactar a un abogado penal?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Debes contactar a un abogado penal desde el primer momento en que seas citado,
                 investigado o detenido. La asesoría temprana ayuda a entender el proceso, proteger
                 tus derechos y evitar decisiones que compliquen la situación. En Costa Rica, actuar
@@ -201,7 +203,7 @@ export default function AbogadoPenalPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Puedo tener un abogado antes de ir a declarar?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Sí. Toda persona tiene derecho a contar con un abogado antes y durante cualquier
                 declaración ante el Ministerio Público o un juez. Es recomendable no declarar sin
                 asesoría legal adecuada, para evitar errores y conocer con claridad el alcance de
@@ -212,7 +214,7 @@ export default function AbogadoPenalPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Qué hace un abogado penal durante la investigación?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 El abogado penal analiza el expediente, asesora al cliente y lo acompaña en
                 diligencias. También participa en audiencias y vela por el respeto de sus derechos
                 durante todo el proceso penal. Su función es construir una estrategia legal
@@ -221,7 +223,7 @@ export default function AbogadoPenalPage() {
             </Card>
             <Card>
               <h3 className="font-serif text-lg text-navy">¿Qué son las medidas cautelares?</h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 Las medidas cautelares son restricciones impuestas por un juez mientras se tramita
                 un proceso penal, como firmar periódicamente, no salir del país o, en casos más
                 graves, prisión preventiva. Se aplican según el riesgo procesal y deben
@@ -232,7 +234,7 @@ export default function AbogadoPenalPage() {
               <h3 className="font-serif text-lg text-navy">
                 ¿Un proceso penal siempre termina en juicio?
               </h3>
-              <p className="mt-2 text-sm text-muted">
+              <p className="mt-2 text-base text-muted">
                 No. Muchos procesos penales se resuelven mediante salidas alternas, sobreseimientos
                 o acuerdos, dependiendo de las circunstancias del caso y de la estrategia legal. La
                 vía final se define según la evidencia, la etapa procesal y las opciones
