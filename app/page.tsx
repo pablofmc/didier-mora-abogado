@@ -69,21 +69,6 @@ const reasons = [
   }
 ];
 
-const testimonials = [
-  {
-    name: "Cliente 1",
-    message: "Recibí orientación clara y un trato profesional de principio a fin."
-  },
-  {
-    name: "Cliente 2",
-    message: "Me acompañó en todo el proceso con estrategia y transparencia."
-  },
-  {
-    name: "Cliente 3",
-    message: "Su compromiso y seguimiento hicieron la diferencia."
-  }
-];
-
 const faqs = [
   {
     question: "¿Cómo es la primera consulta?",
@@ -190,25 +175,6 @@ export default function HomePage() {
               <Card key={reason.title} className="border-gold/30">
                 <h3 className="font-serif text-xl text-navy">{reason.title}</h3>
                 <p className="mt-2 text-base text-muted">{reason.description}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section>
-        <Container className="space-y-10">
-          <SectionHeader
-            eyebrow="Testimonios"
-            title="Clientes que recomendarían mi trabajo"
-            subtitle="Ejemplos de experiencias basadas en casos reales."
-          />
-          <div className="grid gap-6 lg:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="space-y-4">
-                <p className="text-base text-muted">“{testimonial.message}”</p>
-                <div className="text-xs uppercase tracking-[0.2em] text-gold">{testimonial.name}</div>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-muted">Ejemplo</span>
               </Card>
             ))}
           </div>
