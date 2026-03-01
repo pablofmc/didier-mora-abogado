@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://didiermora.cr"),
+  metadataBase: new URL("https://abogadodidiermoracr.com"),
   title: {
     default: "Didier Mora Calvo | Abogado en Costa Rica",
     template: "%s | Didier Mora Calvo"
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Didier Mora Calvo | Abogado en Costa Rica",
     description:
       "Asesoría legal clara, estratégica y confiable. Atiendo casos con seriedad, comunicación directa y enfoque en resultados.",
-    url: "https://didiermora.cr",
+    url: "https://abogadodidiermoracr.com",
     siteName: "Didier Mora Calvo",
     locale: "es_CR",
     type: "website"

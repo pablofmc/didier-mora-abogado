@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://didiermora.cr/sitemap.xml"
+    sitemap: "https://abogadodidiermoracr.com/sitemap.xml"
   };
 }

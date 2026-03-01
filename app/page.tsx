@@ -22,12 +22,36 @@ export const metadata: Metadata = {
 };
 
 const areas = [
-  "Derecho Penal",
-  "Familia",
-  "Civil",
-  "Laboral",
-  "Tránsito",
-  "Notariado"
+  {
+    title: "Derecho Penal",
+    description:
+      "Defensa técnica desde la investigación hasta el juicio, con estrategia y protección de tus derechos."
+  },
+  {
+    title: "Familia",
+    description:
+      "Soluciones cuidadosas en divorcios, pensiones y régimen de visitas, priorizando acuerdos viables."
+  },
+  {
+    title: "Civil",
+    description:
+      "Contratos, cobros y conflictos patrimoniales con análisis claro y acciones legales oportunas."
+  },
+  {
+    title: "Laboral",
+    description:
+      "Asesoría a trabajadores y empleadores en despidos, prestaciones y conflictos en el trabajo."
+  },
+  {
+    title: "Tránsito",
+    description:
+      "Atención integral en accidentes y procesos administrativos para proteger tu licencia y tu responsabilidad."
+  },
+  {
+    title: "Notariado",
+    description:
+      "Escrituras, traspasos y certificaciones con precisión jurídica y tiempos de respuesta ágiles."
+  }
 ];
 
 const reasons = [
@@ -128,8 +152,12 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section>
-        <Container className="space-y-10">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-20 bg-cream/85" />
+        <div className="absolute inset-x-0 -top-12 -z-10 h-24 bg-gradient-to-b from-transparent via-cream/60 to-cream/90" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-cream/50 to-cream/70" />
+        <Container className="space-y-10 pt-4">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-navy/15 to-transparent" />
           <SectionHeader
             eyebrow="Servicios"
             title="Áreas de práctica"
@@ -137,17 +165,17 @@ export default function HomePage() {
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {areas.map((area) => (
-              <Card key={area} className="flex flex-col gap-4">
+              <Card key={area.title} className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">
                   <span className="h-3 w-3 rounded-full bg-gold" />
-                  <h3 className="font-serif text-xl text-navy">{area}</h3>
+                  <h3 className="font-serif text-xl text-navy">{area.title}</h3>
                 </div>
-                <p className="text-base text-muted">
-                  Estrategia, acompañamiento y representación con enfoque preciso.
-                </p>
+                <p className="text-base text-muted">{area.description}</p>
               </Card>
             ))}
           </div>
+          <p className="text-xs text-muted/70">
+          </p>
         </Container>
       </section>
 
