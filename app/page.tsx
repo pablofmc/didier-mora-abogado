@@ -143,7 +143,6 @@ export default function HomePage() {
                 <ul className="list-disc space-y-3 pl-5 text-base text-muted marker:text-gold">
                   <li>32 años en la Corte de Justicia.</li>
                   <li>Ex Juez de la República.</li>
-                  <li>Formación en la Sala IV.</li>
                   <li>19 años litigando penal, tránsito y notariado.</li>
                 </ul>
               </div>
