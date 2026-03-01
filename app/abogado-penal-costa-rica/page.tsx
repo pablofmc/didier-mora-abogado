@@ -151,7 +151,6 @@ export default function AbogadoPenalPage() {
             <ul className="list-disc space-y-3 pl-5 text-base text-muted marker:text-gold">
               <li>Ex Juez de la República.</li>
               <li>32 años en la Corte.</li>
-              <li>Formación en Sala IV.</li>
               <li>19 años litigando procesos penales en Costa Rica.</li>
             </ul>
           </Card>
