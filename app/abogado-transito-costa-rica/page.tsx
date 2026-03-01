@@ -41,7 +41,7 @@ export default function AbogadoTransitoPage() {
     "@context": "https://schema.org",
     "@type": ["LegalService", "LocalBusiness"],
     name: "Didier Mora Calvo",
-    url: "https://didiermora.cr/abogado-transito-costa-rica",
+    url: "https://abogadodidiermoracr.com/abogado-transito-costa-rica",
     description:
       "Abogado de tránsito en Costa Rica. Atención en San José para apelaciones y accidentes viales.",
     areaServed: {

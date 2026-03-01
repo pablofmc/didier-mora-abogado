@@ -41,7 +41,7 @@ export default function AbogadoNotarioPage() {
     "@context": "https://schema.org",
     "@type": ["LegalService", "LocalBusiness"],
     name: "Didier Mora Calvo",
-    url: "https://didiermora.cr/abogado-notario-costa-rica",
+    url: "https://abogadodidiermoracr.com/abogado-notario-costa-rica",
     description:
       "Abogado notario en Costa Rica. Servicios notariales confiables en San José.",
     areaServed: {

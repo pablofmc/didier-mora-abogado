@@ -41,7 +41,7 @@ export default function AbogadoPenalPage() {
     "@context": "https://schema.org",
     "@type": ["LegalService", "LocalBusiness"],
     name: "Didier Mora Calvo",
-    url: "https://didiermora.cr/abogado-penal-costa-rica",
+    url: "https://abogadodidiermoracr.com/abogado-penal-costa-rica",
     description:
       "Abogado penal en Costa Rica. Defensa penal clara, estratégica y confiable en San José.",
     areaServed: {
